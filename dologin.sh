@@ -1,1 +1,1 @@
-oc login -u nzdqzs -p 0ea3dd6559d84f4395ee https://api.na45.prod.nextcle.com:6443
+oc login -u bbrurp -p ea792d48aa3640f68369 https://api.na45.prod.nextcle.com:6443
