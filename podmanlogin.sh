@@ -1,0 +1,1 @@
+podman login -u mprj_gustavo_santos+gugahhrobot -p CVQX8LTUYG2ZDOFDYZHAMD0NQ6OU0ILNQ2PCWCHA3LL5P05VSQBV101SR5X10FQD quay.io
