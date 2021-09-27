@@ -3,13 +3,13 @@
 echo .
 echo Efetuando o Login no OCP4
 echo .
-source ./dologin.sh
+source ~/DO288-apps/dologin.sh
 echo .
 echo Login do Podman, no quay.io
 echo .
-source ./podmanlogin.sh
+source ~/DO288-apps/podmanlogin.sh
 echo .
 echo Variaveis de ambiente
-source ./dosource.sh
+source ~/DO288-apps/dosource.sh
 echo .
 echo ------ Fim --------
