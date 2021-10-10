@@ -14,7 +14,7 @@ pipeline {
         DEV_PROJECT = "kvzxov-books-dev"
         STAGE_PROJECT = "kvzxov-books-stage"
         APP_GIT_URL = "https://github.com/gugahh/DO288-apps"
-        NEXUS_SERVER = "http://nexus-common.apps.cluster.domain.example.com/repository/nodejs"
+        NEXUS_SERVER = "http://nexus-common-apps.na45.prod.nextcle.com/repository/nodejs"
 
         // DO NOT CHANGE THE GLOBAL VARS BELOW THIS LINE
         APP_NAME = "books"
