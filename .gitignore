@@ -71,6 +71,9 @@ nb-configuration.xml
 .DS_Store
 
 ##########################
+
 ## JavaScript
 ##########################
 node_modules/
+
+git_credentials.*
