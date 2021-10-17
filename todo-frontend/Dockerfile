@@ -5,19 +5,17 @@ LABEL version="1.0" \
 	creationDate="2017-12-25" \
 	updateDate="2019-08-01"
 
-# ENV REACT_APP_API_HOST=http://localhost:3000
-ENV REACT_APP_API_HOST=""
-
 ENV BACKEND_HOST=localhost:8081
 
-RUN yum install -y --disableplugin=subscription-manager --nodocs nginx-mod-http-perl && \
-	yum clean all
+RUN yum install -y --disableplugin=subscription-manager --nodocs \
+	nginx nginx-mod-http-perl \
+	&& yum clean all
 
 COPY nginx.conf /etc/nginx/
 
-RUN touch /run/nginx.pid && \
-	chgrp -R 0 /var/log/nginx /run/nginx.pid && \
-	chmod -R g+rwx /var/log/nginx /run/nginx.pid
+RUN touch /run/nginx.pid \
+	&& chgrp -R 0 /var/log/nginx /run/nginx.pid \
+	&& chmod -R g+rwx /var/log/nginx /run/nginx.pid
 
 COPY src/ /usr/share/nginx/html
 
